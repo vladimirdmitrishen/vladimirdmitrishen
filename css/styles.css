@@ -9,6 +9,7 @@ body {
   --color-gray: #757575;
   --color-blak: #212121;
   --color-white: #ffffff;
+  --color-lightgray: #AFB1B8 
 }
 h1,
 h2,
@@ -39,7 +40,9 @@ ul {
 }
 
 .header a {
+  display: flex;
   text-decoration: none;
+  align-items: center;
 }
 .header-container {
   display: flex;
@@ -97,6 +100,7 @@ color: var(--color-blue);
  align-items: center;
 }
 .mail-icon {
+  fill: currentColor;
   margin-right: 10px;
 }
 .contact-icon {
@@ -137,8 +141,7 @@ color: var(--color-blue);
 .hero-section {
   max-width: 1600px;
   height: 600px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4));
-background-image: url(../images/ofis.jpg);
+background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/ofis.jpg);
 padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -184,9 +187,10 @@ padding-top: 200px;
   border-radius: 4px;;
   width: 270px;
   height: 120px;
- padding-top: 25px;
- padding-bottom: 25px;
+  display: flex;
  text-align: center;
+ align-items: center;
+ justify-content: center;
  margin-bottom: 30px;
 }
 .images {
@@ -276,7 +280,7 @@ height: auto;
   display: inline-block;
 }
 .soc-icon {
-  fill: var(--color-gray);
+  fill: currentColor;
 }
 .soc-icon:hover,
 .soc-icon:focus {
@@ -289,6 +293,7 @@ fill: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-lightgray) ;
 }
 
 .soc-list-item:hover,
@@ -322,6 +327,9 @@ margin-bottom: 50px;
   width: 170px;
   height: 92px;
 }
+.client-icon {
+fill: currentColor;
+}
 .client-link {
   display: flex;
   width: 100%;
@@ -330,7 +338,7 @@ margin-bottom: 50px;
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: var(--color-gray);
+  color: var(--color-lightgray);
 }
 .client-link:hover,
 .client-link:focus {
@@ -484,32 +492,35 @@ margin-bottom: 20px;
   padding-bottom: 20px;
   padding-top: 20px;
 } 
+.work-pic {
+  display: block;
+  text-decoration: none;
+}
 
-.work:hover {
+.work-pic:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+ 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-title {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
  }
-
- .work-pic {
-   display: block;
-   max-width: 100%;
-   height: auto;
+ .images-class {
+  display: block;
+  max-width: 100%;
+  height: auto;
  }
 
-
 .work-subtitle {
+  font-style: normal;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
+  color: var(--color-blak);
 }
 
 .work-list {
